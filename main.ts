@@ -157,7 +157,7 @@ app.use(async (c, next) => {
       method: c.req.method,
       headers,
       body: c.req.raw.body,
-      timeout: 60000,
+      timeout: 1800000,
     })
 
     return new Response(res.body, {
